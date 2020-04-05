@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <!--演示表单常用控件使用方法-->
+    <hr/>
+    <form action="url地址" method="提交方式" name="表单名称">
+        用户名：<input type="text" name="" id="text" value="text"><br/>  <!-- value，默认的显示值-->
+        密  码：<input type="password" name="" id="password" value="" maxlength="6"><br/><!--maxlength最大值-->
+        性  别：<input type="radio" name="sex"   checked="checked">女<input type="radio" name="sex"  >男<br/> <!-- name指定相同，实现单选,checked="checked",默认选中-->
+        爱  好：<input type="checkbox" name="hobby"   >跳舞<input type="checkbox" name="hobby"  >唱歌<br/> <!-- 复选-->
+        <input type="button" value="搜索"><br/><!--普通按钮-->
+        <input type="submit" value="提交">    <!--提交-->
+        <input type="reset" value="重置" ><br/><!--重置-->
+        <input type="image" src="ico.png"><br/><!--图片按钮-->
+        <input type="file" ><br/><!--上传文件-->
+        <!-- label   绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点-->
+        <label >输入账号<input type="text"></label> <br/>  <!-- 单个控件直接包裹，多个控件用for id 来指定-->
+        <label for="text2">测试1<input type="text" id="text1">测试2<input type="text" id="text2">测试3<input type="text" id="text3"></label>
+        <br/>   <!-- 单个控件直接包裹，多个控件用for id 来指定-->
+        <textarea cols="30" rows="5"><!--    <textarea cols="每行中的字符数" rows="显示的行数">-->
+        文本内容
+        </textarea><br/>
+        <select>
+            <option>选项1</option>
+            <option>选项2</option>
+            <option>选项3</option>
+        </select>
+    </form>
+</div>
+</body>
+</html>
